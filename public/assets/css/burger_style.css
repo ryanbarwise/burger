@@ -1,47 +1,33 @@
-
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
-    
-    
-    background: grey;
-    font-family: 'Fira Code', monospace;
+  background: rgb(58, 180, 69);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 180, 69, 1) 0%,
+    rgba(225, 253, 29, 0.6542666408668731) 48%,
+    rgba(252, 69, 69, 1) 100%
+  );
 
-    
-
+  font-family: 'Fira Code', monospace;
 }
 
-/* header {
-    text-align: center;
-    background: darkcyan;
-    padding: 5px;
-    border-color: orangered;
-    border-style: solid;
-    border-width: 1px;
-} */
+.row-left {
+  width: 300px;
+  height: 300px;
+  background: white;
+  padding: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+  overflow: auto;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  float: left;
+  color: rgb(251,75,70);
 
-/* img {
-    margin: 20px;
-    float: left;
-    
-    width: 33.3%;
-} */
-
-.row-left{
-    float: left;
-    width: 300px;
-    height: 300px;
-    background: lavender;
-    padding: 10px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: orangered;
-    overflow: auto;
-    margin-bottom: 20px;
-    margin-left: 40px;
-   
 }
 
 /* section {
@@ -53,66 +39,96 @@ body {
     margin: 0 auto;
 } */
 
-.image{
-    margin-left: 40px;
-    float: left;
-    
-    padding: 10px;
-    background: lavender;
-    border-style: solid;
-    border-width: 3px;
+.image {
+  margin-left: 40px;
 
-    margin-bottom: 20px;
-    height: 300px;
-    width: 300px;
-    overflow: hidden;
-    
-    
+  /* padding: 10px; */
+  
+  border-style: solid;
+  border-width: 3px;
 
-    
-    
-    border-color: orangered;
+  margin-bottom: 20px;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  float: left;
+
+  border-color: red;
+  
 }
-
-
 
 .row-right {
-    border-style: solid;
-    border-width: 3px;
-    border-color: orangered;
-    text-align: center;
-    float: left;
-    margin-left: 40px;
-    width: 300px;
-    height: 300px;
-    padding: 10px;
-    background: lavender;
-    overflow: auto;
-    
+  border-style: solid;
+  border-width: 3px;
+  border-color: orangered;
+  /* text-align: center; */
+
+  margin-left: 40px;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  background: white;
+  overflow: auto;
+  float: left;
+  color: rgb(251,75,70);
 }
 
-/* ul {
-    text-align: left;
-    
-} */
+ul {
+  text-align: left;
+}
 
 li {
   padding: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+h1 {
+    text-align: center;
 }
 
 h2 {
-    background: darkcyan;
-    border-color: orangered;
-    border-style: solid;
-    border-width: 1px;
-    
+  background: rgba(58, 180, 69, 1) 0%;
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
 
 .add-form {
-   clear: both;
-   overflow: hidden;
-   text-align: center;
-} 
+  clear: both;
+  overflow: hidden;
+  text-align: center;
+}
+
+button.change-devour,
+button.delete-burger {
+  display: block;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.button {
+  margin: 10px;
+  
+}
+
+.burger-emoji {
+    list-style: none;
 
 
 
+}
+.burger-emoji li::before {
+    content: "🍔";
+}
+
+/* .change-devour {
+display: block;
+height: 20px;
+width: 60px;
+border-radius: 50%;
+border: 1px solid red;
+}; */

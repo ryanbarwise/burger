@@ -1,12 +1,12 @@
 <h1>BURGERS! BURGERS! BURGERS!</h1>
 
-
+<div class = "container">
 <div class="row">
   <div class="row-left">
 
 <h2>DEVOUR ME!</h2>
 
-<ul>
+<ul class = "burger-emoji">
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burgers-block devoured=false name=burger_name}} <!-- passes burger name to li block -->
@@ -16,14 +16,14 @@
 </ul>
   </div>
 <div class = "image">
-  <img src = "https://image.freepik.com/free-vector/hamburger_53876-25481.jpg" height="300px" width ="300px">
+  <img src = "https://image.freepik.com/free-vector/hamburger-ingredients_98292-3567.jpg" height = "300" width = "300">
 </div>
 
   <div class="row-right">
 
 <h2>DEVOURED</h2>
 
-<ul>
+<ul class = "burger-emoji">
   {{#each burgers}}
     {{#if devoured}}
       {{> burgers/burgers-block devoured=true  name=burger_name}}
@@ -32,13 +32,14 @@
 </ul>
   </div>
 </div>
+</div>
 
 <form class="add-form">
-<h2>Add a Burger</h2>
+
 
 
   <div class="form-group">
-    <label for="new-burger">New Burger:</label>
+    <label for="new-burger"><h1>CREATE A BURGER:</h1></label>
     <input type="text" id="burg" name="name">
   </div>
 
@@ -46,6 +47,8 @@
 
   <button class = "button" type="submit">ADD BURGER</button>
 </form>
+
+
 
 
 
