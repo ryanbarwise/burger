@@ -17,6 +17,7 @@ body {
 .row-left {
   width: 300px;
   height: 300px;
+  /* background-image: url("https://image.shutterstock.com/image-vector/doodle-hamburger-seamless-pattern-background-600w-273829901.jpg"); */
   background: white;
   padding: 10px;
   border-style: solid;
@@ -27,6 +28,7 @@ body {
   margin-left: 40px;
   float: left;
   color: rgb(251,75,70);
+
 
 }
 
