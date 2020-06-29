@@ -39,5 +39,5 @@
   ## Contact
   <ryanbarwise@gmail.com>
 
-  ![](../public/assets/burger.gif)
+  ![](../public/burger.gif)
   
